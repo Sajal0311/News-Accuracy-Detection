@@ -7,9 +7,9 @@ from rapidfuzz import fuzz
 # -----------------------------
 # 1. API keys and endpoints
 # -----------------------------
-NEWSAPI_KEY = "722fa8d4ef774721886e22d78e5ef8cd"
-CURRENTSAPI_KEY = "ZFScZ-YrlrN74NACLcEYE7k05x6AXnfrTEoz8uwgmFCgimf0"
-MEDIASTACK_KEY = "12b2a5c0f24122d7e28d364a44c7dc87"
+NEWSAPI_KEY = "news api"
+CURRENTSAPI_KEY = "news api"
+MEDIASTACK_KEY = "news api"
 
 NEWSAPI_URL = f"https://newsapi.org/v2/top-headlines?country=in&apiKey={NEWSAPI_KEY}"
 CURRENTSAPI_URL = f"https://api.currentsapi.services/v1/latest-news?language=en&apiKey={CURRENTSAPI_KEY}"
@@ -94,3 +94,4 @@ else:
 # Save CSV
 df_final.to_csv(file_name, index=False)
 print(f"CSV saved: {file_name}. Total articles: {len(df_final)}")
+
